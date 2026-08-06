@@ -35,3 +35,8 @@ jobs:
       - name: Push Backend Image
         run: |
           docker push ghcr.io/${{ github.repository_owner }}/expense-backend:latest
+
+      - name: Docker Compose Deploy
+        run: |
+          docker compose down
+          docker compose up -d
