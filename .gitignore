@@ -1,6 +1,10 @@
 .env
-docker-compose.yaml
 vault/
-venv/
+vault.sh
+
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+venv/
