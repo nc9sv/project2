@@ -22,5 +22,3 @@ jobs:
       - name: Build Backend Docker Image
         run: docker build -t expense-backend ./backend
 
-      - name: Build Frontend Docker Image
-        run: docker build -t expense-frontend ./frontend
