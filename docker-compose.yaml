@@ -1,6 +1,8 @@
 services:
   backend:
-    image: ghcr.io/nc9sv/expense-backend:latest
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
     container_name: expense-backend
     ports:
       - "5000:5000"
